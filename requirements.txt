@@ -5,3 +5,4 @@ pandas==2.2.2
 scikit-learn==1.5.2
 torch==2.4.1
 torch-geometric==2.6.0
+seaborn==0.13.2
