@@ -45,6 +45,7 @@
     - GNN Enhanced Architecture
         - Time Series Dataset Handling
         - GNN-based embedding
+            - Deep Dive into library code: [for advanced minibatching](https://github.com/pyg-team/pytorch_geometric/blob/master/torch_geometric/loader/dataloader.py)
     - Hyperparameter opt
         - ❗Dive deeper into the concat parameter of `GATConv`
     
