@@ -55,6 +55,7 @@
     - ❗Compare Continuous FS With Other Studies
         - [Fingerspelling PoseNet](https://arxiv.org/abs/2311.12128)
         - [Other study about comparison of approaches]()
+    - ❗[image based solution](https://github.com/fmahoudeau/MiCT-RANet-ASL-FingerSpelling)
 
 - ❗❓🕐Cluster Analysis of Sequences
     - ❗Visualize attention. Intuition suggests, that constant stream -> same token multiple times -> problem (perhaps figure out a way to enhance attention for such cases/research existing solutions)
