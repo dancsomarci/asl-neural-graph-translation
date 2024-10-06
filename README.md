@@ -34,7 +34,6 @@
 
 - Continuous Fingerspelling
     - ✅Rebuild Transformer from previous study using `PyTorch`
-    - ✅Enhanced Architecture:
         - ✅Proper masking for both enc-dec inputs
     - ✅Enhanced Data Handling:
         - ✅Filter any special characters as this experiment focuses on traditional characters: `a-z` and `numbers`
@@ -42,6 +41,7 @@
         - ✅Remove frames where the dominant hand is not fully visible
         - ✅Keep sequences that have at least 3 frames/character in the target phrase
         - 🚧More professional data saving
+    - GNN Enhanced Architecture
     - ❗Compare With Other Studies
         - [Fingerspelling PoseNet](https://arxiv.org/abs/2311.12128)
             - ❗Use [ChicagoFSWild](https://home.ttic.edu/~klivescu/ChicagoFSWild.htm#overview) dataset
