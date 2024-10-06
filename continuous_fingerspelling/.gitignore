@@ -1,3 +1,4 @@
 kaggle_dataset/*
-filtered_kaggle_dataset/*
+processed_data/*
 *.pkl
+*.csv

@@ -40,15 +40,22 @@
         - ✅Identify dominant hand (enough for ASL Fingerspelling), `only work with the 21*3 coordinates of dominant hand`
         - ✅Remove frames where the dominant hand is not fully visible
         - ✅Keep sequences that have at least 3 frames/character in the target phrase
-        - 🚧More professional data saving
+        - 🚧More professional data saving (hdf5, parquet)
+        - ❗separate train-valid from test based on signer_ids
     - GNN Enhanced Architecture
-    - ❗Compare With Other Studies
+        - Time Series Dataset Handling
+        - GNN-based embedding
+    - Hyperparameter opt
+        - ❗Dive deeper into the concat parameter of `GATConv`
+    
+- Paper Related Stuff
+    - ❗Real World analysis (at least measure inference time)
+    - ❗🕐Use [ChicagoFSWild](https://home.ttic.edu/~klivescu/ChicagoFSWild.htm#overview) dataset
+    - ❗Compare Continuous FS With Other Studies
         - [Fingerspelling PoseNet](https://arxiv.org/abs/2311.12128)
-            - ❗Use [ChicagoFSWild](https://home.ttic.edu/~klivescu/ChicagoFSWild.htm#overview) dataset
         - [Other study about comparison of approaches]()
-    - ❗Real World analysis
 
-- ❗❓ Cluster Analysis of Sequences
+- ❗❓🕐Cluster Analysis of Sequences
     - ❗Visualize attention. Intuition suggests, that constant stream -> same token multiple times -> problem (perhaps figure out a way to enhance attention for such cases/research existing solutions)
 
 ### 2. 🚧 App
