@@ -10,6 +10,7 @@
 | ❌     | Abandoned                |
 | 🚧     | Not for now              |
 | ❗      | Idea worth exploring     |
+| 🕐     | Only if time allows      |
 
 
 ### 1. 🧠 AI
@@ -29,14 +30,26 @@
 - Static Fingerspelling
     - ✅Applying GNNs caused a significant bump in validation accuracy, but a decrease in test accuracy
     ![](docs/images/static_fs_results.png)
-    - ❗Classify hands with missing points (graph vs padding representation) -> MLP vs GNN
+    - 🕐Classify hands with missing points (graph vs padding representation) -> MLP vs GNN
 
 - Continuous Fingerspelling
     - ✅Rebuild Transformer from previous study using `PyTorch`
-    - Enhanced Architecture:
+    - ✅Enhanced Architecture:
         - ✅Proper masking for both enc-dec inputs
-        - ❗Visualize attention. Intuition suggests, that constant stream -> same token multiple times -> problem (perhaps figure out a way to enhance attention for such cases/research existing solutions)
-    - ❗Improve Data handling: remove frames that don't contain detailed hand pose (+perhaps more aggressive data filtering)
+    - ✅Enhanced Data Handling:
+        - ✅Filter any special characters as this experiment focuses on traditional characters: `a-z` and `numbers`
+        - ✅Identify dominant hand (enough for ASL Fingerspelling), `only work with the 21*3 coordinates of dominant hand`
+        - ✅Remove frames where the dominant hand is not fully visible
+        - ✅Keep sequences that have at least 3 frames/character in the target phrase
+        - 🚧More professional data saving
+    - ❗Compare With Other Studies
+        - [Fingerspelling PoseNet](https://arxiv.org/abs/2311.12128)
+            - ❗Use [ChicagoFSWild](https://home.ttic.edu/~klivescu/ChicagoFSWild.htm#overview) dataset
+        - [Other study about comparison of approaches]()
+    - ❗Real World analysis
+
+- ❗❓ Cluster Analysis of Sequences
+    - ❗Visualize attention. Intuition suggests, that constant stream -> same token multiple times -> problem (perhaps figure out a way to enhance attention for such cases/research existing solutions)
 
 ### 2. 🚧 App
 

@@ -1,8 +1,15 @@
-matplotlib==3.9.2
-networkx==3.2.1
-numpy==2.0.2
-pandas==2.2.2
-scikit-learn==1.5.2
+# Machine Learning
 torch==2.4.1
 torch-geometric==2.6.0
+scikit-learn==1.5.2
+
+# Data Handling
+numpy==2.0.2
+pandas==2.2.2
+networkx==3.2.1
+pyarrow==17.0.0
+mediapipe==0.10.14
+
+# Visualization
+matplotlib==3.9.2
 seaborn==0.13.2
