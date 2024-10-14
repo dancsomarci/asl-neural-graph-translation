@@ -13,3 +13,6 @@ mediapipe==0.10.14
 # Visualization
 matplotlib==3.9.2
 seaborn==0.13.2
+
+# Performance monitoring
+snakeviz==2.2.0

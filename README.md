@@ -43,9 +43,10 @@
         - 🚧More professional data saving (hdf5, parquet)
         - ❗separate train-valid from test based on signer_ids
     - GNN Enhanced Architecture
-        - Time Series Dataset Handling
+        - Pad both inputs properly
         - GNN-based embedding
-            - Deep Dive into library code: [for advanced minibatching](https://github.com/pyg-team/pytorch_geometric/blob/master/torch_geometric/loader/dataloader.py)
+            - Time Series Dataset Handling [for advanced minibatching](https://github.com/pyg-team/pytorch_geometric/blob/master/torch_geometric/loader/dataloader.py)
+            - 🚧Faster embedding based on real batching (same size graphs!)
     - Hyperparameter opt
         - ❗Dive deeper into the concat parameter of `GATConv`
     

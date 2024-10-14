@@ -2,3 +2,4 @@ kaggle_dataset/*
 processed_data/*
 *.pkl
 *.csv
+*.prof
