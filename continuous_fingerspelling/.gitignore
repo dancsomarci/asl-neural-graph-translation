@@ -3,3 +3,5 @@ processed_data/*
 *.pkl
 *.csv
 *.prof
+*.pth
+*.json
