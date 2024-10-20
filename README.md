@@ -27,10 +27,14 @@
 
 - Static Fingerspelling
     - ✅Applying GNNs caused a significant bump in validation accuracy, but a decrease in test accuracy
+    - Use the fact that each hand-graph is the same:
+        - 🚧Special Batched GNN layers
+        - ❗Instead of mean pooling use Linear layer ([helper: look into `scatter` function](https://pytorch-geometric.readthedocs.io/en/latest/_modules/torch_geometric/nn/pool/glob.html#global_mean_pool))
 
     ![](docs/images/static_fs_results.png)
 
     - 🕐Classify hands with missing points (graph vs padding representation) -> MLP vs GNN
+    - ❗Experiment with different setups (combine heads with Linear layer etc...)
 
 - Continuous Fingerspelling
     - ✅Revisit Transformers
@@ -57,12 +61,11 @@
         - ✅Export results with settings
         - ✅GPU ready
         - ✅Kaggle dataset upload
-        - Hyperparameter opt (Compare different configurations)
-            - ❗Dive deeper into the concat parameter of `GATConv`
+        - Compare different configurations
     - Evaluation
         - Train a fully optimized model on `seq_len`=256
         - ❗Separate train-valid from test based on `signer_ids`
-        - ✅`Levenshtein distance` (masked?)
+        - ✅`Levenshtein distance` (specially masked)
     
 - Paper
     - Skeleton
