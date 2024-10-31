@@ -1,0 +1,33 @@
+done - \cite{???}: pose approximation appropriate?: https://openaccess.thecvf.com/content/CVPR2021W/ChaLearn/html/Moryossef_Evaluating_the_Immediate_Applicability_of_Pose_Estimation_for_Sign_Language_CVPRW_2021_paper.html
+
+done - \cite{taxonomy}: https://link.springer.com/article/10.1007/s10462-024-10895-z
+
+New paper section:
+------------------
+done - \cite{posenet}: https://openaccess.thecvf.com/content/WACV2024W/WVLL/html/Fayyazsanavi_Fingerspelling_PoseNet_Enhancing_Fingerspelling_Translation_With_Pose-Based_Transformer_Models_WACVW_2024_paper.html
+
+- \cite{???} Special bullshit GNN for single gestures: https://www.researchgate.net/publication/378665566_Sign_Language_Recognition_using_Graph_and_General_Deep_Neural_Network_Based_on_Large_Scale_Dataset
+	- seq -> static
+	- use fully connected intra frame graphs (as face and hand relation is important)
+	- \cite{ST-GCN} spatial-temporal graph convolutional networks: https://arxiv.org/abs/1801.07455
+
+- \cite{HST-GNN} hierarchical graph transformer (encoder-decoder): https://arxiv.org/abs/2111.07258
+	below to overcome stuff with non connected stuff
+	- \cite{spatio-temporal-combined-with-trad-methods}: https://arxiv.org/abs/2103.08833
+		
+
+
+
+- \cite{super-pixel-graph}: https://www.researchgate.net/publication/378554578_Hand_Gesture_Recognition_for_Multi-Culture_Sign_Language_Using_Graph_and_General_Deep_Learning_Network
+
+- zero-shot stuff interesting: https://www.researchgate.net/publication/382817627_Hand_and_Pose_Based_Feature_Selection_for_Zero-Shot_Sign_Language_Recognition
+
+-gnn:
+nice video: https://www.youtube.com/watch?v=8owQBFAHw7E&t=3s&ab_channel=TensorFlow
+
+
+Future work category:
+- general sign language dataset: https://how2sign.github.io/
+- \cite{better-mediapipe}: https://arxiv.org/abs/2308.09525
+- reverse task wow: https://openaccess.thecvf.com/content/CVPR2024/html/Baltatzis_Neural_Sign_Actors_A_Diffusion_Model_for_3D_Sign_Language_CVPR_2024_paper.html
+- reverse task to generate new data: https://openaccess.thecvf.com/content/CVPR2023/html/Arkushin_Ham2Pose_Animating_Sign_Language_Notation_Into_Pose_Sequences_CVPR_2023_paper.html
