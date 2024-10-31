@@ -29,12 +29,10 @@
     - ✅Applying GNNs caused a significant bump in validation accuracy, but a decrease in test accuracy
     - Use the fact that each hand-graph is the same:
         - 🚧Special Batched GNN layers
-        - ❗Instead of mean pooling use Linear layer ([helper: look into `scatter` function](https://pytorch-geometric.readthedocs.io/en/latest/_modules/torch_geometric/nn/pool/glob.html#global_mean_pool))
+    - ❗Experiment with different setups (combine heads with Linear layer etc...)
+    - 🕐Classify hands with missing points (graph vs padding representation) -> MLP vs GNN
 
     ![](docs/images/static_fs_results.png)
-
-    - 🕐Classify hands with missing points (graph vs padding representation) -> MLP vs GNN
-    - ❗Experiment with different setups (combine heads with Linear layer etc...)
 
 - Continuous Fingerspelling
     - ✅Revisit Transformers
@@ -66,14 +64,13 @@
         - Train a fully optimized model on `seq_len`=256
         - ❗Separate train-valid from test based on `signer_ids`
         - ✅`Levenshtein distance` (specially masked)
-    
+
 - Paper
     - Skeleton
     - ❗Real World analysis (at least measure inference time)
     - ❗🕐Use [ChicagoFSWild](https://home.ttic.edu/~klivescu/ChicagoFSWild.htm#overview) dataset
     - ❗Compare Continuous FS With Other Studies
         - [Fingerspelling PoseNet](https://arxiv.org/abs/2311.12128)
-        - [Other study about comparison of approaches]()
     - ❗[image based solution](https://github.com/fmahoudeau/MiCT-RANet-ASL-FingerSpelling)
     - ❗Visualize attention. Intuition suggests, that constant stream -> same token multiple times -> problem (perhaps figure out a way to enhance attention for such cases/research existing solutions)
 
