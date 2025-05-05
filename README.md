@@ -2,4 +2,7 @@
 
 👨‍🎓[Previous work](https://github.com/dancsomarci/sign-language)
 
-👀See tags for datasets!
+## 👀Datasets:
+
+- [Static](https://www.kaggle.com/datasets/marcelldancs/tdk-v2-static)
+- [Dynamic](https://www.kaggle.com/datasets/marcelldancs/tdk-v2-sequential)
